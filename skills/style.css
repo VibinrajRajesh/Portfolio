@@ -1,0 +1,684 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+:root {
+  --primary-color: #4071f4;
+}
+
+@font-face {
+  font-family: "Acme";
+  src: url("../assets/fonts/Acme/Acme-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Slab";
+  src: url("../assets/fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #f2f3f4;
+  overflow-x:hidden;
+}
+
+
+.navbar-brand {
+  font-family: "Acme";
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.navbar-nav {
+  font-family: "Roboto-Slab";
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #000;
+}
+.navbar-nav li {
+  position: relative;
+}
+
+.navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+}
+
+.navbar-nav li a:hover::after {
+  transform: scaleX(1);
+}
+
+.content-box{
+  width:80%;
+  height:580vh;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 3%;
+  margin-left: 10%;
+
+}
+
+#Education {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  padding: 2rem;
+}
+
+.header2 {
+  font-family: "Roboto-Slab";
+  text-transform: uppercase;
+}
+
+.line {
+  background-color: var(--primary-color);
+  width: 5%;
+  height: 0.8vh;
+  opacity: 1;
+  border: 0;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px; /* Width of the vertical timeline */
+  background: navy; /* Color of the timeline */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px; /* Center the line horizontally */
+  z-index: -2;
+}
+
+.containern {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.containern::after {
+  content: "\f19d"; /* Font Awesome code for the education icon */
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 4px solid var(--primary-color); /* Border color matching the theme */
+  border-radius: 50%; /* Circular icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Font Awesome 5 Free"; /* Font Awesome font */
+  font-weight: 900; /* Solid icon weight */
+  font-size: 20px;
+  color: navy;
+  position: absolute;
+  left: 100%; /* Center the icon horizontally on the timeline */
+  transform: translateX(
+    -50%
+  ); /* Center it precisely by adjusting with translate */
+  top: 1rem; /* Adjust this to the vertical position you want */
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 29px;
+  border: medium solid var(--primary-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--primary-color) transparent transparent;
+}
+
+.right::after {
+  left: 0;
+}
+
+.content {
+  background-color: var(--primary-color);
+  position: relative;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.contentr {
+  background-color: var(--primary-color);
+  position: relative;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--primary-color);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--primary-color);
+}
+
+.tag {
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.desc {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.desc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.desc p {
+  font-size: 1.2rem;
+}
+
+#Experience {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  margin: 13rem 0;
+}
+
+.timeline2 {
+  position: relative;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.timeline2::after {
+  content: "";
+  position: absolute;
+  width: 6px; /* Width of the vertical timeline */
+  background: navy; /* Color of the timeline */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px; /* Center the line horizontally */
+  z-index: -2;
+}
+
+.containern2 {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.containern2::after {
+  content: "\f19d"; /* Font Awesome code for the education icon */
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 4px solid var(--primary-color); /* Border color matching the theme */
+  border-radius: 50%; /* Circular icon */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Font Awesome 5 Free"; /* Font Awesome font */
+  font-weight: 900; /* Solid icon weight */
+  font-size: 20px;
+  color: navy;
+  position: absolute;
+  left: 100%; /* Center the icon horizontally on the timeline */
+  transform: translateX(
+    -50%
+  ); /* Center it precisely by adjusting with translate */
+  top: 1rem; /* Adjust this to the vertical position you want */
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 29px;
+  border: medium solid var(--primary-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--primary-color) transparent transparent;
+}
+
+.right::after {
+  left: 0;
+}
+
+.content2 {
+  background-color: var(--primary-color);
+  position: relative;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid var(--primary-color);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent var(--primary-color);
+}
+
+.tag {
+  font-size: 1.3rem;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  font-family: "Roboto-Slab";
+}
+
+.desc {
+  margin-left: 1.5rem;
+  padding-bottom: 1rem;
+  font-family: "Poppins";
+}
+
+.desc h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.desc p {
+  font-size: 1.2rem;
+}
+
+#Skills {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  margin-top: 50rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: #f0f8ff;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  margin-left: 0rem;
+  margin-top: 2rem;
+  opacity: 1;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 106px;
+  margin: 0 40px;
+}
+
+#certify {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.row{
+    margin-left:4rem;
+    margin-top:5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 85%;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.content {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.academy {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 1rem;
+    color: #555;
+}
+
+#lang{
+  position: relative;
+  top:25rem;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 54%;
+  margin-left:73px;
+  border-radius: 8px;
+}
+
+.academy2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.date2 {
+  font-size: 1rem;
+  color: #555;
+}
+
+#hobbs{
+  position: relative;
+  top:30rem;
+}
+
+
+footer {
+  background-color: var(--primary-color);
+}
+
+.lead{
+  font-family: "Acme";
+  color:#fff;
+  font-size:2rem;
+}
+
+.lead2{
+  color:#fff;
+}
+
+.CV{
+  background-color: black;
+  color: white;
+  border: 0;
+  width: 45%;
+  height: 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left:13%;
+}
+
+.CV:hover{
+  background-color: #444;
+}
+
+.footy{
+  width:25%;
+}
+
+.footy2{
+  width:48%;
+  text-align: center;
+  margin-top:5rem;
+}
+
+.lead3{
+  color:#fff;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cvbtn{
+  background-color: var(--primary-color); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .content-box{
+    height:515vh;
+  }
+
+  .timeline::after{
+    display:none;
+  }
+
+  .containern::after{
+    display:none;
+  }
+
+  .containern::before{
+    display:none;
+  }
+
+  .content{
+    width:15rem;
+    margin-left:-2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .tag{
+    font-size:1.2rem;
+  }
+
+  .desc p{
+    font-size: 0.9rem;
+  }
+
+  #Experience{
+    margin-top: 18rem;
+  }
+
+  .timeline2::after{
+    display:none;
+  }
+
+  .contentr{
+    width:15rem;
+    margin-left:-2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .containern2::after{
+    display: none;
+  }
+
+  .containern2::before{
+    display: none;
+  }
+
+  .content2{
+    width:15rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .left{
+    left:-12px;
+  }
+
+  .right{
+    left:-12px;
+  }
+  #Skills{
+    margin-top:46rem;
+  }
+
+  #certify{
+    display: none;
+  }
+  
+  #lang{
+    top:6rem;
+  }
+
+  .card2{
+    margin-left:-33px;
+    width:98%;
+    margin-bottom:15px;
+  }
+
+  #hobbs{
+    top:11rem;
+  }
+
+  table,thead,tbody,th,td,tr {
+    display: block;
+  }
+
+  footer{
+    display:none;
+  }
+}

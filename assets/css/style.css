@@ -1,0 +1,464 @@
+@import url("media.css");
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+:root {
+  --primary-color: #4071f4;
+  --background-color:#f1fafe;
+  --secondary-color:#ffffff;
+}
+
+@font-face {
+  font-family: "Acme";
+  src: url("../fonts/Acme/Acme-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Slab";
+  src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+body {
+  font-family: "Poppins";
+  background-color: var(--background-color);
+  overflow-x:hidden;
+}
+
+.navbar{
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-family: "Acme";
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.navbar-nav {
+  font-family: "Roboto-Slab";
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #000;
+}
+.navbar-nav li {
+  position: relative; 
+}
+
+.navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  transform: scaleX(0); 
+  transform-origin: center; 
+  transition: transform 0.5s ease; 
+}
+
+.navbar-nav li a:hover::after {
+  transform: scaleX(1);
+}
+
+#home{
+  width: 99%;
+  height:100vh;
+  position:relative;
+  top:0;
+  padding:10px;
+}
+
+#about{
+  width: 99%;
+  height:60vh;
+  position:absolute;
+  top:100%;
+  padding:10px;
+}
+
+#services{
+  width: 99%;
+  height:60vh;
+  position:absolute;
+  top:170%;
+  padding:10px;
+}
+
+.head-name{
+  font-family: 'Bebas Neue'; 
+  font-size: 50px; 
+  letter-spacing: 2px;
+}
+
+.cbtn{
+  background-color: var(--primary-color);
+  color:#fff;
+  border:0;
+  width:20%;
+  height:7vh;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.cbtn:hover{
+  background-color: rgba(0,0,0,0);
+  color: var(--primary-color);
+  border:2px solid var(--primary-color);
+}
+
+.header2{
+  font-family: "Roboto-Slab";
+  text-transform: uppercase;
+}
+
+.line{
+  background-color: var(--primary-color);
+  width:5%;
+  height:0.8vh;
+  opacity: 1;
+  border:0;
+  border-radius: 10px;
+  margin:auto;
+}
+
+.img1{
+  border-radius: 10px;
+}
+
+.header3{
+  font-family: "Roboto-Slab";
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 80%;
+  height: 220px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 20px;
+}
+
+.flip-card-front {
+  background-color: var(--secondary-color);
+}
+
+.flip-card-back {
+  background-color: rgba(4, 0, 255, 0.1);
+  transform: rotateY(180deg);
+}
+
+.content3{
+  padding-right:2rem;
+}
+
+#projects{
+  margin-top: 55%;
+}
+
+.thumb{
+  width:25%;
+  margin-top:4%;
+  margin-left: 6.7%;
+  text-align: center;
+}
+.thumb img{
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 100%;
+}
+
+.thumb img:hover{
+  width:105%;
+  box-shadow: rgba(4, 0, 255, 0.5) 0px 2px 8px 0px;
+}
+
+.viewbtn{
+  background-color: var(--primary-color);
+  color:#fff;
+  border:0;
+  width:10%;
+  height:7vh;
+  border-radius: 10px;
+  text-transform: uppercase;
+  margin-top:20px;
+  margin-left:45%;
+}
+
+.viewbtn:hover{
+  background-color: rgba(0,0,0,0);
+  color: var(--primary-color);
+  border:2px solid var(--primary-color);
+}
+
+#contact{
+  margin-top:5%;
+}
+
+.contactinfo {
+  background-color: var(--primary-color); 
+  width: 25%;
+  height: auto;
+  padding: 2rem;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position:relative;
+  z-index:3 !important;
+  top:13rem;
+  left:3rem;
+}
+
+.contactinfo h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.info {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.info li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+
+.social {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.social li {
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+.social li a {
+  color: white;
+  font-size: 20px;
+}
+
+.contactForm {
+  background-color: white; /* White background */
+  padding: 2rem;
+  width: 76%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 18rem;
+  margin-top: -20rem;
+}
+
+.contactForm h2 {
+  margin-bottom: 1rem;
+  margin-left:10rem;
+}
+label{
+  margin-left:10rem;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"]{
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left:10rem;
+
+}
+.submit-btn {
+  background-color: black;
+  color: white;
+  border: 0;
+  width: 17%;
+  height: 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left:10rem;
+}
+
+select{
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left:10rem;
+}
+
+textarea{
+  width: 60%;
+  height:15vh;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left:10rem;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+}
+
+/* Additional Styles */
+.contactForm input[type="text"]:focus,
+.contactForm input[type="email"]:focus,
+.contactForm input[type="tel"]:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+
+footer {
+  background-color: var(--primary-color);
+}
+
+.lead{
+  font-family: "Acme";
+  color:#fff;
+  font-size:2rem;
+}
+
+.lead2{
+  color:#fff;
+}
+
+.CV{
+  background-color: black;
+  color: white;
+  border: 0;
+  width: 45%;
+  height: 3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-left:13%;
+}
+
+.CV:hover{
+  background-color: #444;
+}
+
+.footy{
+  width:25%;
+}
+
+.footy2{
+  width:48%;
+  text-align: center;
+  margin-top:5rem;
+}
+
+.lead3{
+  color:#fff;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cvbtn{
+  background-color: var(--primary-color); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}

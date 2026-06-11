@@ -1,0 +1,67 @@
+{
+    "latestprojects":[
+        {
+            "name": "Zomato Sales Dashboard",
+            "category":"Data Analyst",
+            "link": "https://github.com/VibinrajRajesh/Ecommerce-Sales-Dashboard.git",
+            "image": "./Projects/Thumbnail/DA zomato.jpg"
+        },
+        {
+            "name": "Travel Buss Pass",
+            "category":"Web Development",
+            "link": "https://github.com/VibinrajRajesh/Travel-Buss-Pass.git",
+            "image": "./Projects/Thumbnail/WD TBP.jpg"
+        },
+        {
+            "name": "NGO Website",
+            "category":"Web Development",
+            "link": "https://github.com/VibinrajRajesh/Ecommerce-Sales-Dashboard.git",
+            "image": "./Projects/Thumbnail/WD NGO.jpg"
+        }
+    ],
+
+    "projects":[
+        {
+            "name": "Zomato Sales Dashboard",
+            "category":"Data Analyst",
+            "link": "https://github.com/VibinrajRajesh/Ecommerce-Sales-Dashboard.git",
+            "image": "./Thumbnail/DA zomato.jpg",
+            "description": "I created a dynamic Zomato Sales Dashboard in Power BI, offering real-time insights into sales performance, trends, and customer behavior. This tool enables data-driven decision-making and optimizes operational efficiency."
+        },
+        {
+            "name": "Amazon Cell Reviews using NLP",
+            "category":"Data Science",
+            "link": "https://github.com/VibinrajRajesh/Amazon-Cell-Reviews-using-NLP.git",
+            "image": "./Thumbnail/DS Amazon Cell Review.jpg",
+            "description": "I conducted a comprehensive sales analysis using Python, leveraging libraries like pandas and matplotlib for data manipulation and visualization. Key insights were derived to understand trends, identify growth areas, and optimize performance."
+        },
+        {
+            "name": "Sales Data Analysis using Python",
+            "category":"Data Analyst",
+            "link": "https://github.com/VibinrajRajesh/Sales-Data-Analysis.git",
+            "image": "./Thumbnail/DA Sales Data Anlysis.jpg",
+            "description": "I conducted a comprehensive sales analysis using Python, leveraging libraries like pandas and matplotlib for data manipulation and visualization. Key insights were derived to understand trends, identify growth areas, and optimize performance."
+        },
+        {
+            "name": "Ecommerce Sales Dashboard",
+            "category":"Data Analyst",
+            "link": "https://github.com/VibinrajRajesh/Ecommerce-Sales-Dashboard.git",
+            "image": "./Thumbnail/DA Ecommerce.jpg",
+            "description": "I developed an interactive Ecommerce Sales analysis using Excel, showcasing key metrics like revenue, profit, and trends with dynamic visualizations. This tool empowers data-driven decisions for optimizing sales performance."
+        },
+        {
+            "name": "NGO Website",
+            "category":"Web Development",
+            "link": "https://github.com/VibinrajRajesh/NGO-Website.git",
+            "image": "./Thumbnail/WD NGO.jpg",
+            "description": "A platform dedicated to driving social change through the power of community support and compassion. With secure and easy donation options via Razorpay, your contribution directly helps those in need."
+        },
+        {
+            "name": "Travel Buss Pass",
+            "category":"Web Development",
+            "link": "https://github.com/VibinrajRajesh/Travel-Buss-Pass.git",
+            "image": "./Thumbnail/WD TBP.jpg",
+            "description": "Seamlessly book and manage your travel passes with ease. Powered by LAMP, providing fast, secure, and reliable service for every journey."
+        }
+    ]
+}

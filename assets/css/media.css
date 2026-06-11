@@ -1,0 +1,190 @@
+@media only screen and (max-width: 600px) {
+    .navbar-nav{
+        text-align: center;
+      }
+      #home{
+        padding-top:66px;
+      }
+      .content1{
+        font-size: 20px;
+      }
+      .head-name{
+        font-size: 40px;
+      }
+      .content2{
+        font-size:24px;
+      }
+      .cbtn{
+        width:40%;
+      }
+      .content3{
+        text-align: center;
+        padding:2rem;
+      }
+    
+      #about{
+        height:166vh;
+        padding-top:80px;
+      }
+    
+      #services{
+        margin-top:370px;
+      }
+    
+      .card1{
+        margin-top:2rem;
+      }
+
+    .content1{
+        text-align: center;
+    }
+
+    .head-name{
+        text-align: center;
+    }
+
+    .content2{
+        text-align: center;
+    }
+
+    .slink{
+        text-align: center;
+    }
+
+    .cbtn{
+        margin-left:30%;
+        margin-top:10%;
+    }
+
+    #about{
+        font-size: 15px;
+    }
+
+    .flip-card{
+        margin-left:-59px;
+        width:112%;
+        margin-bottom: 15px;
+    }
+
+    #projects{
+        margin-top:104rem;
+    }
+
+    .thumb {
+        width: 90%; /* Reduce thumbnail size for smaller screens */
+        margin-left: 5%; /* Center align thumbnails */
+      }
+    
+      .thumb img {
+        width: 100%; /* Ensure images fit in the container */
+      }
+    
+      .viewbtn {
+        width: 80%; /* Make the button wider for better usability */
+        margin-left: 10%; /* Center button */
+      }
+
+      #contact {
+        margin-top: 3%;
+      }
+    
+      .contactinfo {
+        width: 90%; /* Full width for smaller screens */
+        padding: 1.5rem;
+        margin: auto; /* Center align */
+        top: 0.9rem;
+        left: 0;
+        position: relative; /* Adjust position for stacking */
+        margin-bottom: 2rem;
+      }
+    
+      .contactinfo h2 {
+        text-align: center; /* Center align heading */
+      }
+    
+      .contactForm {
+        width: 90%; /* Full width for smaller screens */
+        margin: auto; /* Center align */
+        margin-top: 0; /* Remove large top margin */
+      }
+    
+      .contactForm h2 {
+        margin: 0 auto 1rem auto;
+        text-align: center; /* Center align heading */
+      }
+    
+      label {
+        margin-left: 0; /* Reset left margin for labels */
+        display: block; /* Make labels block elements */
+        margin-bottom: 0.5rem; /* Add spacing below labels */
+      }
+    
+      .contactForm input[type="text"],
+      .contactForm input[type="email"],
+      .contactForm input[type="tel"],
+      .contactForm select,
+      .contactForm textarea {
+        width: 100%; /* Full width inputs */
+        margin: 0; /* Reset margin */
+      }
+    
+      .submit-btn {
+        width: 100%; /* Full width button */
+        margin: 1rem 0; /* Add margin around button */
+      }
+    
+      .social {
+        justify-content: center; /* Center social icons */
+        flex-wrap: wrap; /* Wrap icons on smaller screens */
+      }
+    
+      .social li {
+        margin: 0.5rem; /* Add spacing between icons */
+      }
+
+      footer{
+        text-align:center;
+        justify-content: center;
+        align-items:center;
+      }
+
+      .footy, .footy2 {
+        width: 100%; /* Full-width for mobile */
+        text-align: center;
+        margin-top:0;
+      }
+    
+      .lead {
+        font-size: 1.5rem; /* Reduce font size */
+      }
+    
+      .lead2 {
+        font-size: 0.9rem;
+        margin: 1rem auto;
+        margin-left:1.5rem;
+      }
+    
+      .CV {
+        width: 80%; /* Adjust button size */
+        margin-left:6%;
+      }
+    
+      .modal-content {
+        width: 90%; /* Reduce modal width */
+      }
+    
+      .lead3 {
+        font-size: 1rem; /* Smaller text for mobile */
+        margin-top: 1rem;
+      }
+    
+      section h5 {
+        font-size: 1rem;
+      }
+    
+      .btn {
+        padding: 0.5rem 1rem; /* Adjust button padding */
+        font-size: 0.9rem;
+        margin: 0.5rem;
+      }
+}
